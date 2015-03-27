@@ -1,8 +1,11 @@
 package ch7.sample;
 
+import java.util.Arrays;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import com.sun.org.apache.xml.internal.security.Init;
 
 public class MathAndProbability {
 
@@ -10,7 +13,6 @@ public class MathAndProbability {
 			.getLogger(MathAndProbability.class);
 
 	public static void main(String[] args) {
-		//System.out.println(primeBetter(8));
 		logger.info("The Prime number {}", primeBetter(8));
 	}
 
@@ -26,4 +28,24 @@ public class MathAndProbability {
 
 		return true;
 	}
+
+//	public static boolean[] sieveOfEratosthenes(int max) {
+//		boolean[] flags = new boolean[max + 1];
+//
+//		// set all flags to true
+//		Arrays.fill(flags, Boolean.TRUE);
+//		int prime = 2;
+//
+//		while (prime <= Math.sqrt(max)) {
+//
+//		}
+//
+//	}
+
+	public static void crossOff(boolean[] flags, int prime) {
+		for (int i = prime * prime; i < flags.length; i += prime) {
+
+		}
+	}
+
 }
